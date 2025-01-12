@@ -12,6 +12,8 @@
 
 # Nom de la bibliothèque
 NAME = libftprintf.a
+ 
+LIB2	= ranlib
 
 # Liste des fichiers source
 SRC =	srcs/ft_printf.c \
@@ -23,24 +25,27 @@ SRC =	srcs/ft_printf.c \
 	srcs/conversion_u.c \
 	srcs/conversion_x.c \
 	srcs/conversion_X.c \
-	srcs/parsing.c \
+	srcs/parsing.c
 
 # Création de la liste des fichiers objet
 OBJ = $(SRC:.c=.o)
 
 # Compilateur et options
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I
+
+INCLUDE	= ft_printf.h
 
 # Règle principale
 all: $(NAME)
 
 # Création de la bibliothèque
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(INCLUDE)
 	ar -rcs $(NAME) $(OBJ)
+	$(LIB2) $(NAME)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 # Nettoyage des fichiers objet
 clean:
