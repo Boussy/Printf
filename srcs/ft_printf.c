@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
-#include <stdarg.h>
-#include <unistd.h>
 
 int	ft_printf(const char *str, ...)
 {
@@ -28,26 +26,26 @@ int	ft_printf(const char *str, ...)
 	return (len);
 }
 
-// int	main(void)
-// {
-// 	ft_printf("Test de ft_printf:\n");
-// 	ft_printf("Caractère: %s\n", "");
-// 	ft_printf("Chaîne: %s\n", "Bonjour !");
-// 	ft_printf("Chaîne: %c   s\n", '\0');
-// 	printf("%d\n", ft_printf("Chaîne: %s%s%s       s\n", NULL, NULL, NULL));
-// 	ft_printf("Chaîne: %p   s\n", NULL);
-// 	ft_printf("Chaîne: %d   s\n", NULL);
-// 	ft_printf("Pointeur: %pp%s%%M\n", main, "s");
-// 	ft_printf("Pointeur: %p\n", main);
-// 	ft_printf("Entier: %d\n", 123);
-// 	ft_printf("Entier non signé: %u\n", 123);
-// 	ft_printf("Hexadécimal (lower): %x\n", 123);
-// 	ft_printf("Hexadécimal (upper): %X\n", 123);
-// 	ft_printf("Pourcentage: %%\n");
-// 	ft_printf("%");
-// 	printf("%d\n", ft_printf(0));
-// 	return (0);
-// }
+//int	main(void)
+//{
+	//ft_printf("Test de ft_printf:\n");
+	//ft_printf("Caractère: %s\n", "");
+	//ft_printf("Chaîne: %s\n", "Bonjour !");
+	//ft_printf("Chaîne: %c   s\n", '\0');
+	//printf("%d\n", ft_printf("Chaîne: %s%s%s       s\n", NULL, NULL, NULL));
+	//ft_printf("Chaîne: %p   s\n", NULL);
+	//ft_printf("Chaîne: %d   s\n", NULL);
+	//ft_printf("Pointeur: %pp%s%%M\n", main, "s");
+	//ft_printf("Pointeur: %p\n", main);
+	//ft_printf("Entier: %d\n", 123);
+	//ft_printf("Entier non signé: %u\n", 123);
+	//ft_printf("Hexadécimal (lower): %x\n", 123);
+	//ft_printf("Hexadécimal (upper): %X\n", 123);
+	//ft_printf("Pourcentage: %%\n");
+	//ft_printf("%");
+	//printf("%d\n", ft_printf(0));
+	//return (0);
+//}
 
 // int	main(void)
 // {
