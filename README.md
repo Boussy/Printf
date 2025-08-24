@@ -64,7 +64,7 @@ Chaque conversion est gérée dans une fonction dédiée (`ft_print_char`, `ft_p
 
 ---
 
-## ✅ Conseils pour refaire le projet
+## ⚡️ Conseils pour refaire le projet
 
 1. Commence par une version **simplifiée** (`%c`, `%s`, `%d`).
 2. Ajoute progressivement les autres conversions.
